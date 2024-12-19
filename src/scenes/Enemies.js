@@ -18,7 +18,7 @@ class Enemies extends Phaser.Physics.Arcade.Sprite {
 }
 export class Wizard extends Enemies {
     constructor(scene, x, y, img) {
-        y=540;
+        y=610;
         super(scene, x, y, img);
         this.setDisplaySize(196, 156);
         this.setSize(31, 46);
