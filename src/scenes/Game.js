@@ -56,15 +56,15 @@ export class Game extends Scene {
         })
     }
     createEnemy() {
-        this.wizard = new Wizard(this, 0, 0, 'wizard');
+        this.wizard = new Wizard(this, -250, 0, 'wizard');
         this.physics.add.collider(this.ground, this.wizard);
         this.physics.add.collider(this.wizard, this.player, this.handleEnemyCollision, null, this);
 
-        this.knight = new Knight(this, 0, 0, 'knight');
+        this.knight = new Knight(this, -250, 0, 'knight');
         this.physics.add.collider(this.ground, this.knight);
         this.physics.add.collider(this.knight, this.player, this.handleEnemyCollision, null, this);
 
-        this.beast = new Beast(this, 0, 0, 'beast');
+        this.beast = new Beast(this, -250, 0, 'beast');
         this.physics.add.collider(this.ground, this.beast);
         this.physics.add.collider(this.beast, this.player, this.handleEnemyCollision, null, this);
 
