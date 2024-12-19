@@ -14,7 +14,7 @@ export class Game extends Scene {
         this.treeHeight = 452;
         this.treeWidth = 305;
         this.cloudSpeed = 0.5;
-        this.groundSpeed = 10;
+        this.groundSpeed = 5;
         this.smallGapSize = 172;
         this.bigGapSize = this.tileWidth * 3;
         this.knight = null;
