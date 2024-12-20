@@ -43,11 +43,12 @@ export class Wizard extends Enemies {
 }
 export class Knight extends Enemies {
     constructor(scene, x, y, img) {
-        y=641;
+        y=646;
         super(scene, x, y, img);
         this.setDisplaySize(196, 146);
         this.setSize(46, 46);
         this.defineEnemyAnimation();
+        this.body.allowGravity = false;
     }
     defineEnemyAnimation() {
         this.anims.create({
@@ -67,11 +68,12 @@ export class Knight extends Enemies {
 }
 export class Beast extends Enemies {
     constructor(scene, x, y, img) {
-        y=656;
+        y=657;
         super(scene, x, y, img);
         this.setDisplaySize(196, 156);
         this.setSize(52,28);
         this.defineEnemyAnimation();
+        this.body.allowGravity=false;
     }
     defineEnemyAnimation() {
         this.anims.create({

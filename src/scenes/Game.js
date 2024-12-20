@@ -80,7 +80,7 @@ export class Game extends Scene {
         const randomType = enemyTypes[Math.floor(Math.random() * enemyTypes.length)];
 
         const enemy = enemyClasses[randomType];
-        enemy.x = this.cameras.main.width + 15;
+        enemy.x = this.cameras.main.width+80;
     }
     create() {
         this.startTime = this.time.now;
@@ -132,7 +132,6 @@ export class Game extends Scene {
             loop: true // Repeat the event
         })
     }
-
     handleEnemyCollision() {
         console.log(`Game Over!!\n You survived for ${(this.time.now - this.startTime) / 1000} seconds`);
         this.scene.pause();
