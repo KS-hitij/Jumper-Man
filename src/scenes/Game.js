@@ -140,18 +140,12 @@ export class Game extends Scene {
         if (this.beast.x + this.beast.width >= 0) {
             this.beast.update(this.groundSpeed);
         }
-        else
-            this.beast.anims.stop();
         if (this.knight.x + this.knight.width >= 0) {
             this.knight.update(this.groundSpeed);
         }
-        else
-            this.knight.anims.stop();
         if (this.wizard.x + this.wizard.width >= 0) {
             this.wizard.update(this.groundSpeed);
         }
-        else
-            this.wizard.anims.stop();
     }
     update() {
 
